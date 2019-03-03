@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<title>
+		Section 5, Lecture 39 - Data Entry
+	</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"><img src="images/gold-ribbon.png" width=50></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="register.html">Register</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="login.html">Login</a>
+				</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Data
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="graphs.html">View Charts</a>
+				<a class="dropdown-item active" href="#">Enter Event <span class="sr-only">(current)</span></a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<h2 style="text-align: center;">Enter CBC Information</h2>
+	<div name="dataentryform">
+		<form method="POST">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="cbcdate">Date:</label>
+					<input type="date" class="form-control" name="cbcdate" required>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="cbctime">CBC Time:</label>
+					<input type="time" class="form-control" name="cbctime" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-2">
+					<label for="wbc">WBC:</label>
+					<input type="number" class="form-control" step=any name="wbc" placeholder="0.00">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="hgb">HGB:</label>
+					<input type="number" class="form-control" step=any name="hgb" placeholder="0.00">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="plt">PLT:</label>
+					<input type="number" class="form-control" step=any name="plt" placeholder="0.00">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="gran">GRAN:</label>
+					<input type="number" class="form-control" step=any name="gran" placeholder="0.00">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="anc">ANC:</label>
+					<input type="number" class="form-control" step=any name="anc" placeholder="0.00" aria-placeholder="0.00">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" name="comment" rows=3 placeholder="Comment"></textarea>
+			</div>
+			<input type="submit" value="Submit">
+			<input type="reset">
+	</div>
+	<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
